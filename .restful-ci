@@ -1,0 +1,9 @@
+{
+	"ciDir": "searchinizer",
+	"assetsDir": "assets",
+	"features": [
+		"includeBootstrap",
+		"includeFontAwesome",
+		"includeCompass"
+	]
+}

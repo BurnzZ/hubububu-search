@@ -1,0 +1,10 @@
+{
+    "name": "cmsc191-ex3",
+    "private": true,
+    "dependencies": { 
+        "bootstrap-sass-official": "~3.1.0", 
+        "font-awesome": "~4.0.3",
+        "jquery": "~1.11.0"
+    },
+    "devDependencies": {}
+}
