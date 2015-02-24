@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io
 
+.tmp/
+
 ### Windows ###
 # Windows image file caches
 Thumbs.db
