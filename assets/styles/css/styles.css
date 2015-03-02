@@ -1,4 +1,44 @@
 body {
-  width: 80%;
+  width: 90%;
   padding: 50px 0;
+  margin: 0 auto;
+  font-family: Arial;
+  font-size: 18px;
+  background-color: #f5f6f9;
+  color: #222; }
+
+h1 {
+  text-align: center;
+  font-size: 2.5em; }
+
+.bold {
+  font-weight: bold; }
+
+.light {
+  color: #a8a8a8; }
+
+.right-space {
+  margin-right: 5px; }
+
+#form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+  width: 600px;
+  text-align: center;
   margin: 0 auto; }
+  #form-container input {
+    font-size: 1em;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 5px; }
+  #form-container input[type=text] {
+    width: 400px; }
+  #form-container input[type=submit] {
+    background-color: #f5f6f9; }
+
+#repeat-result {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px; }

@@ -1,5 +1,66 @@
+$bg_body: #f5f6f9;
+$bg_box: #fff;
+$bg_desc: #8e959e;
+
+$color_websafe: #d5d8db;
+$color_subheading: #424242;
+$color_text: #222;
+
 body {
-	width: 80%;
+	width: 90%;
 	padding: 50px 0;
 	margin: 0 auto;
+	font-family: Arial;
+	font-size: 18px;
+	background-color: $bg_body;
+	color: $color_text;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.5em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.light {
+	color: #a8a8a8;
+}
+
+.right-space {
+	margin-right: 5px;
+}
+
+#form-container {
+
+	background-color: $bg_box;
+	padding: 30px;
+	border-radius: 30px;
+	width: 600px;
+	text-align: center;
+	margin: 0 auto;
+
+	input {
+		font-size: 1em;
+		padding: 10px;
+		margin: 4px;
+		border-radius: 5px;
+	}
+
+	input[type=text] {
+		width: 400px;
+	}
+
+	input[type=submit] {
+		background-color: $bg_body;
+	}
+}
+
+#repeat-result {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 30px;
 }
