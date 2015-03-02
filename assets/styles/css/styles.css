@@ -11,6 +11,9 @@ h1 {
   text-align: center;
   font-size: 2.5em; }
 
+h3 {
+  text-align: center; }
+
 .bold {
   font-weight: bold; }
 
@@ -42,3 +45,18 @@ h1 {
   width: 50%;
   margin: 0 auto;
   padding: 30px; }
+
+#results-container > div {
+  width: 45%;
+  margin: 2.5%;
+  background-color: #fff;
+  float: left;
+  border-radius: 15px; }
+#results-container table {
+  width: 90%;
+  margin: 5%; }
+  #results-container table tr {
+    border-top: 1px solid grey; }
+  #results-container table td {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0; }

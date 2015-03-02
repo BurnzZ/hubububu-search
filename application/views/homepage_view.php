@@ -29,7 +29,48 @@
 		<div id="repeat-result"></div>
 
 		<div id="results-container">
-			
+			<div id="algo-1">
+				<h3>Algo 1</h3>
+
+				<table>
+					<tbody>
+						<tr>
+							<td>Lorem Ipsum</td>
+							<td>1.2721</td>
+						</tr>
+						<tr>
+							<td>Lorem asd aa sdas ad asd asd asd asd adas s Ipsum</td>
+							<td>1.2721</td>
+						</tr>
+						<tr>
+							<td>Lorem Ipsum</td>
+							<td>1.2721</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
+			<div id="algo-2">
+				<h3>Algo 2</h3>
+
+				<table>
+					<tbody>
+						<tr>
+							<td>Lorem Ipsum asdasda asd ada sda asd aqdas das dsas</td>
+							<td>1.2721</td>
+						</tr>
+						<tr>
+							<td>Lorem Ipsum</td>
+							<td>1.2721</td>
+						</tr>
+						<tr>
+							<td>Lorem Ipsum</td>
+							<td>1.2721</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</body>
 </html>
