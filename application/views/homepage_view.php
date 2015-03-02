@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Hubububu Search</title>
+		<link rel="stylesheet" type="text/css" href="./assets/styles/css/styles.css">
 	</head>
 	<body>
 	adfasdljfasfj
