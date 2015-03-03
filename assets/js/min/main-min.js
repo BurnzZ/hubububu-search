@@ -10,8 +10,12 @@ $(document).ready(function() {
                 query: a
             },
             success: function(e) {
+                console.log(e);
                 $("#repeat-result").html("<span class='bold light right-space'>You have searched:</span>" + e.query);
                 if (e) {}
+            },
+            error: function(e) {
+                console.log(e);
             }
         });
     });

@@ -13,11 +13,15 @@ $(document).ready( function() {
 
 			success: function(data) {
 
+				console.log(data);
 				$('#repeat-result').html("<span class='bold light right-space'>You have searched:</span>" + data.query);
 
 				if (data) {
 
 				}
+			},
+			error: function(err) {
+				console.log(err);
 			}
 		});
 	});
