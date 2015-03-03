@@ -31,7 +31,7 @@
 		<div id="results-container">
 			<div id="algo-1">
 				<h3>Algo 1</h3>
-
+				<span class="num-results"></span>
 				<table>
 					<tbody>
 					</tbody>
@@ -41,7 +41,7 @@
 
 			<div id="algo-2">
 				<h3>Algo 2</h3>
-
+				<span class="num-results"></span>
 				<table>
 					<tbody>
 						<tr>

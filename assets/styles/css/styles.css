@@ -23,6 +23,12 @@ h3 {
 .right-space {
   margin-right: 5px; }
 
+.num-results {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  display: block; }
+
 #form-container {
   background-color: #fff;
   padding: 30px;

@@ -7,9 +7,9 @@ class Search_algo extends CI_Model {
     }
 
     function get_algo_1($input){
-        
-        $query = $this->db->query("SELECT coursedesc FROM course
-                                    WHERE match(coursedesc) AGAINST ('{$input}');");
+
+        $query = $this->db->query("SELECT coursedesc FROM course WHERE match(coursedesc) AGAINST ('{$input}');");
+
 
         if ($query->num_rows() > 0) {        
             return $query->result();   
