@@ -34,18 +34,6 @@
 
 				<table>
 					<tbody>
-						<tr>
-							<td>Lorem Ipsum</td>
-							<td>1.2721</td>
-						</tr>
-						<tr>
-							<td>Lorem asd aa sdas ad asd asd asd asd adas s Ipsum</td>
-							<td>1.2721</td>
-						</tr>
-						<tr>
-							<td>Lorem Ipsum</td>
-							<td>1.2721</td>
-						</tr>
 					</tbody>
 				</table>
 			</div>

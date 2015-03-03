@@ -13,8 +13,17 @@ $(document).ready( function() {
 
 			success: function(data) {
 
-				console.log(data);
 				$('#repeat-result').html("<span class='bold light right-space'>You have searched:</span>" + data.query);
+
+				var algo_1 = $('#algo-1 table tbody');
+				$(algo_1).html("");
+
+				console.log();
+
+				for (var i=0; i<data.algo_1.length; i++) {
+					$(algo_1).append("<tr><td>" + data.algo_1[i].coursedesc + "</td><td>1.0</td></tr>");
+				}
+
 
 				if (data) {
 
