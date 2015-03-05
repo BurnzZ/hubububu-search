@@ -44,18 +44,6 @@
 				<span class="num-results"></span>
 				<table>
 					<tbody>
-						<tr>
-							<td>Lorem Ipsum asdasda asd ada sda asd aqdas das dsas</td>
-							<td>1.2721</td>
-						</tr>
-						<tr>
-							<td>Lorem Ipsum</td>
-							<td>1.2721</td>
-						</tr>
-						<tr>
-							<td>Lorem Ipsum</td>
-							<td>1.2721</td>
-						</tr>
 					</tbody>
 				</table>
 			</div>

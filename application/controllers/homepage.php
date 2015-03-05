@@ -15,29 +15,27 @@ class Homepage extends CI_Controller {
         $data['query'] = $this->input->post('query');
 
 		$this->load->model('search_algo');
-        $data['algo_1'] = $this->search_algo->get_algo_1($data['query']);
-
-        /*
+        $algo_1_result = $this->search_algo->get_algo_1($data['query']);
 
         // COMPUTATION HERE
 
-        $algo_1 = array()
+        $algo_1 = array();
 
-        $algo_1['string'] = ["justin beiber", "cat mouse bieber"];
-        $algo_1['score'] = [2.0, 1.6666]
+        $algo_1['string'] = $algo_1_result[0];
+        $algo_1['score'] = $algo_1_result[1];
 
-        $data['algo_1'] = $algo_1
+        $data['algo_1'] = $algo_1;
 
         // COMPUTATION HERE
 
-        $algo_2 = array()
+        $algo_2_result = $this->search_algo->get_algo_2($data['query']);
 
-        $algo_2['string'] = ["justin beiber", "cat mouse bieber"];
-        $algo_2['score'] = [2.0, 1.6666]
+        $algo_2 = array();
 
-        $data['algo_2'] = $algo_2
+        $algo_2['string'] = $algo_2_result[0];
+        $algo_2['score'] = $algo_2_result[1];
 
-        */
+        $data['algo_2'] = $algo_2;
 
         // returns back AJAX results
 		echo json_encode($data);

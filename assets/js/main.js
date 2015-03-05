@@ -13,7 +13,7 @@ $(document).ready( function() {
 
 			success: function(data) {
 
-				console.log(data.algo_1);
+				console.log(data.algo_2);
 
 				$('#repeat-result').html("<span class='bold light right-space'>You have searched:</span>" + data.query);
 
@@ -21,16 +21,29 @@ $(document).ready( function() {
 					var algo_1 = $('#algo-1 table tbody');
 					$(algo_1).html("");
 
-					$('#algo-1 .num-results').html("Number of results: " + data.algo_1.length);
+					$('#algo-1 .num-results').html("Number of results: " + data.algo_1.string.length);
 
-					for (var i=0; i<data.algo_1.length; i++) {
-						$(algo_1).append("<tr><td>" + data.algo_1[i].coursedesc + "</td><td>1.0</td></tr>");
+					for (var i=0; i<data.algo_1.string.length; i++) {
+						$(algo_1).append("<tr><td>" + data.algo_1.string[i] + "</td><td>" + data.algo_1.score[i] + "</td></tr>");
+					}
+
+
+					var algo_2 = $('#algo-2 table tbody');
+					$(algo_2).html("");
+
+					$('#algo-2 .num-results').html("Number of results: " + data.algo_2.string.length);
+
+					for (var i=0; i<data.algo_2.string.length; i++) {
+						$(algo_2).append("<tr><td>" + data.algo_2.string[i] + "</td><td>" + data.algo_2.score[i] + "</td></tr>");
 					}
 
 				}
 
 				if (data.algo_1.length == 0)
 					$('#algo-1 .num-results').html("");
+
+				if (data.algo_2.length == 0)
+					$('#algo-2 .num-results').html("");
 				
 			},
 			error: function(err) {
