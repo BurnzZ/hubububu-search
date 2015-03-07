@@ -1,9 +1,9 @@
-Justin gay bieber
+Justin omg bieber
 
 
-Justin gay bieber			3
-Justin gay bieber christine mouse 	2.6	[2, 3] 
-gay bieber				2
+Justin omg bieber			3
+Justin omg bieber christine mouse 	2.6	[2, 3] 
+omg bieber				2
 bieber					1
 bieber doggie cata			0.6666
 
@@ -13,11 +13,11 @@ base_score() - [unmatched() / total()]
 
 ## ALGO 2
 
-Justin gay bieber doggit cat mouse 	2.6 - 0.00 = 2.6
-Justin doggit gay cat mouse bieber	2.6 - 0.03 = 2.57
+Justin omg bieber doggit cat mouse 	2.6 - 0.00 = 2.6
+Justin doggit omg cat mouse bieber	2.6 - 0.03 = 2.57
 
 base_score() - [unmatched() / total()] - [ trimmed([unmatched() / total()]) / 10  ]
 
 
-that `Justin` doggit `gay` cat mouse `bieber` something like 
-`Justin` doggit `gay` cat mouse `bieber` 
+that `Justin` doggit `omg` cat mouse `bieber` something like 
+`Justin` doggit `omg` cat mouse `bieber` 

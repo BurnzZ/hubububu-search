@@ -3,6 +3,7 @@ $bg_box: #fff;
 $bg_desc: #8e959e;
 
 $color_websafe: #d5d8db;
+$color_pseudo: #8e959e;
 $color_subheading: #424242;
 $color_text: #222;
 
@@ -42,6 +43,14 @@ h3 {
 	width: 100%;
 	margin: 0 auto;
 	display: block;
+	margin-top: 25px;
+}
+
+.pseudo-code {
+	font-family: "Courier New";
+	text-align: center;
+	font-size: 0.8em;
+	color: $color_pseudo;
 }
 
 #form-container {

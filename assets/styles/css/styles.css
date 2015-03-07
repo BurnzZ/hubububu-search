@@ -27,7 +27,14 @@ h3 {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  margin-top: 25px; }
+
+.pseudo-code {
+  font-family: "Courier New";
+  text-align: center;
+  font-size: 0.8em;
+  color: #8e959e; }
 
 #form-container {
   background-color: #fff;

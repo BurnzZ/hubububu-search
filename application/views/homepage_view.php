@@ -31,6 +31,7 @@
 		<div id="results-container">
 			<div id="algo-1">
 				<h3>Algo 1</h3>
+				<div class="pseudo-code">base_score() - ( unmatched() / total() )</div>
 				<span class="num-results"></span>
 				<table>
 					<tbody>
@@ -41,6 +42,7 @@
 
 			<div id="algo-2">
 				<h3>Algo 2</h3>
+				<div class="pseudo-code">base_score() - ( unmatched() / total() ) <br> - ( trimmed[ unmatched() / total() ] / 10  )</div>
 				<span class="num-results"></span>
 				<table>
 					<tbody>
