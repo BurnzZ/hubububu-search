@@ -20,7 +20,7 @@ $(document).ready( function() {
 					console.log(jQuery.type( data.algo_1 ));
 				if ( jQuery.type( data.algo_1 ) === "object") {
 					/* Populate Algo 1 Results */
-					
+
 					var algo_1 = $('#algo-1 table tbody');
 					$(algo_1).html("");
 
@@ -33,6 +33,7 @@ $(document).ready( function() {
 
 				else{
 					$('#algo-1 .num-results').html("Number of results: 0");
+					$('#algo-1 table tbody').empty();
 				}
 
 				if ( jQuery.type( data.algo_2 ) === "object") {
@@ -50,6 +51,7 @@ $(document).ready( function() {
 				}
 				else{
 					$('#algo-2 .num-results').html("Number of results: 0");
+					$('#algo-2 table tbody').empty();
 				}
 			},
 			error: function(err) {
