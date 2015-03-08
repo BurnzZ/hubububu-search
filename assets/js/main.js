@@ -13,13 +13,14 @@ $(document).ready( function() {
 
 			success: function(data) {
 
-				console.log(data.algo_2);
+				console.log(data);
 
 				$('#repeat-result').html("<span class='bold light right-space'>You have searched:</span>" + data.query);
 
-				if (data) {
+					console.log(jQuery.type( data.algo_1 ));
+				if ( jQuery.type( data.algo_1 ) === "object") {
 					/* Populate Algo 1 Results */
-
+					
 					var algo_1 = $('#algo-1 table tbody');
 					$(algo_1).html("");
 
@@ -28,8 +29,13 @@ $(document).ready( function() {
 					for (var i=0; i<data.algo_1.string.length; i++) {
 						$(algo_1).append("<tr><td>" + data.algo_1.string[i] + "</td><td>" + data.algo_1.score[i] + "</td></tr>");
 					}
+				}
 
+				else{
+					$('#algo-1 .num-results').html("Number of results: 0");
+				}
 
+				if ( jQuery.type( data.algo_2 ) === "object") {
 					/* Populate Algo 2 Results */
 
 					var algo_2 = $('#algo-2 table tbody');
@@ -42,13 +48,9 @@ $(document).ready( function() {
 					}
 
 				}
-
-				if (data.algo_1.length == 0)
-					$('#algo-1 .num-results').html("");
-
-				if (data.algo_2.length == 0)
-					$('#algo-2 .num-results').html("");
-				
+				else{
+					$('#algo-2 .num-results').html("Number of results: 0");
+				}
 			},
 			error: function(err) {
 				console.log(err);
