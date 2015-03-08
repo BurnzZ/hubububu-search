@@ -17,7 +17,18 @@ $(document).ready( function() {
 
 				$('#repeat-result').html("<span class='bold light right-space'>You have searched:</span>" + data.query);
 
-					console.log(jQuery.type( data.algo_1 ));
+				var words=data.query.split(" ");
+				console.log(words);
+
+				for(var j=0; j<words.length; j++){
+					for (var k=0; k<data.algo_1.string.length; k++) {
+						data.algo_1.string[k]=data.algo_1.string[k].replace(words[j], "<span class='bold'>"+words[j]+"</span>")
+					}
+					for (var k=0; k<data.algo_2.string.length; k++) {
+						data.algo_2.string[k]=data.algo_2.string[k].replace(words[j], "<span class='bold'>"+words[j]+"</span>")
+					}
+				}
+
 				if ( jQuery.type( data.algo_1 ) === "object") {
 					/* Populate Algo 1 Results */
 
