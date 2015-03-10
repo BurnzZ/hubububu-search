@@ -2,7 +2,12 @@
 - [SaSS](http://sass-lang.com/)
 - [Node.js](http://nodejs.org/) -- dependecy
 
-## Workflow:
+## Back-end Tools:
+- [CodeIgniter](https://ellislab.com/codeigniter) 
+
+## Config:
+
+./application/config/database.php
 
 ## Other Info:
 
