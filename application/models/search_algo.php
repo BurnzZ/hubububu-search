@@ -9,6 +9,7 @@ class Search_algo extends CI_Model {
     function get_algo_1($input){
 
     	$data = array();
+    	$input = strtolower($input);
 
         $query = $this->db->query("SELECT coursedesc FROM course WHERE match(coursedesc) AGAINST ('{$input}');");
 
@@ -41,6 +42,8 @@ class Search_algo extends CI_Model {
     function get_algo_2($input){
 
     	$data = array();
+
+    	$input = strtolower($input);
 
         $query = $this->db->query("SELECT coursedesc FROM course WHERE match(coursedesc) AGAINST ('{$input}');");
 

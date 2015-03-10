@@ -37,14 +37,18 @@ $(document).ready( function() {
 					return;
 				}
 
-				var words=data.query.split(" ");
+				var words=data.query.toLowerCase();
+				words=words.split(" ");
+
 
 				for(var j=0; j<words.length; j++){
 					for (var k=0; k<data.algo_1.string.length; k++) {
-						data.algo_1.string[k]=data.algo_1.string[k].replace(words[j], "<span class='bold'>"+words[j]+"</span>")
+						data.algo_1.string[k]=" " + data.algo_1.string[k] + " ";
+						data.algo_1.string[k]=data.algo_1.string[k].replace(" " + words[j] + " ", " <span class='bold'>"+words[j]+"</span> ");
 					}
 					for (var k=0; k<data.algo_2.string.length; k++) {
-						data.algo_2.string[k]=data.algo_2.string[k].replace(words[j], "<span class='bold'>"+words[j]+"</span>")
+						data.algo_2.string[k]=" " + data.algo_2.string[k] + " ";
+						data.algo_2.string[k]=data.algo_2.string[k].replace(" " + words[j] + " ", " <span class='bold'>"+words[j]+"</span> ");
 					}
 				}
 
